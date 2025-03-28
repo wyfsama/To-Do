@@ -4,7 +4,12 @@
   "compilerOptions": {
     "types": [
       "./src/renderer/auto-imports.d.ts"
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@renderer/*": ["src/renderer/src/*"],
+      "@/*": ["src/renderer/src/*"]
+    }
   },
   "include": [
     "src/**/*.ts",
@@ -13,3 +18,4 @@
     "src/**/*.vue"
   ]
 }
+

@@ -13,6 +13,8 @@ declare module 'vue' {
     AInput: typeof import('@arco-design/web-vue')['Input']
     AMenu: typeof import('@arco-design/web-vue')['Menu']
     AMenuItem: typeof import('@arco-design/web-vue')['MenuItem']
+    Index: typeof import('./src/components/Menus/Menu.vue')['default']
+    Menu: typeof import('./src/components/Menu/Menu.vue')['default']
     Versions: typeof import('./src/components/Versions.vue')['default']
   }
 }

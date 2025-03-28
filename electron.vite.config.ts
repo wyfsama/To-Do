@@ -5,6 +5,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ArcoResolver } from 'unplugin-vue-components/resolvers'
 import postcssNested from 'postcss-nested'
+import svgLoader from 'vite-svg-loader'
 
 export default defineConfig({
   main: {
@@ -26,6 +27,7 @@ export default defineConfig({
     },
     plugins: [
       vue(),
+      svgLoader(),
       AutoImport({
         imports: ['vue'],
         dirs: [
